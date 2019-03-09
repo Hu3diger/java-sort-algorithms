@@ -1,5 +1,5 @@
-# WELCOME
-**This is an activity for the subject Data Structure of the graduation in Software Engineering**
+## WELCOME
+**This is an activity for the subject Data Structure of the graduation in Software Engineering (ALL CODED IN JAVA)**
 
 ### :point_right: [Atividade 2](https://github.com/Hu3diger/ordenation-activities/blob/master/Atividade2/Atividade2.java)
 
