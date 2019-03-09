@@ -1,7 +1,7 @@
 # WELCOME
 **This is an activity for the subject Data Structure of the graduation in Software Engineering**
 
-### :point_right: Atividade 2
+### :point_right: [Atividade 2](https://github.com/Hu3diger/ordenation-activities/blob/master/Atividade2/Atividade2.java)
 
 This class use the Insertion sort algorithm.
 
@@ -9,7 +9,7 @@ The user can input fifteen numbers (only integers), and the output is the ordena
 
 ---
 
-### :point_right: Atividade 3
+### :point_right: [Atividade 3](https://github.com/Hu3diger/ordenation-activities/blob/master/Atividade3/Atividade3.java)
 
 This class use the Selection sort algorithm.
 
@@ -17,7 +17,7 @@ The user can input ten numbers (Real numbers), and the output is the ordenated l
 
 ---
 
-### :point_right: Atividade 4 
+### :point_right: [Atividade 4](https://github.com/Hu3diger/ordenation-activities/blob/master/Atividade4/Atividade4.java) 
 
 > (NOT COMPLETE AND NOT WORK)
 
@@ -27,7 +27,7 @@ The user can input twenty words, and the output is alphabetically ordenated list
 
 ---
 
-### :point_right: Atividade 5
+### :point_right: [Atividade 5](https://github.com/Hu3diger/ordenation-activities/blob/master/Atividade5/Atividade5.java)
 
 This class uses the Quicksort algorithm.
 
@@ -35,7 +35,7 @@ The code generate one thousand random numbers and show to the user, and the outp
 
 ---
 
-### :point_right: Atividade 6 
+### :point_right: Atividade 6
 
 > (IN PROGRESS OF DEVELOP)
 
