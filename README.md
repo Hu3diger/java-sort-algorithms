@@ -35,7 +35,9 @@ The code generate one thousand random numbers and show to the user, and the outp
 
 ---
 
-### :point_right: Atividade 6 #(IN PROGRESS OF DEVELOP)
+### :point_right: Atividade 6 
+
+> (IN PROGRESS OF DEVELOP)
 
 This class uses the Quicksort algorithm.
 
