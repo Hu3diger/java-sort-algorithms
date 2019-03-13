@@ -6,45 +6,72 @@ public class Atividade4 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        for (int i = 0; i < 4; i++) {
 
+        String vetor[] =  new String[20];
+
+
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.println("Digite a " + (i + 1) + "º palavra: ");
+            vetor[i] = in.next();
         }
+
+        ordena(vetor, 0, vetor.length-1);
+
+
     }
 
-    public static void merge(int x[], int inicio, int fim) {
+    public static void ordena(String vetor[], int inicio, int fim) {
         int meio;
         if (inicio < fim) {
             meio = (inicio + fim) / 2;
-            merge(x, inicio, meio);
-            merge(x, meio + 1, fim);
-            intercala(x, inicio, fim, meio);
+            ordena(vetor, inicio, meio);
+            ordena(vetor, meio + 1, fim);
+            combina(vetor, inicio, fim, meio);
         }
-    }
 
-    public static void intercala(int x[], int inicio, int fim, int meio) {
-        int poslivre = inicio, iniciovetor1 = inicio, iniciovetor2 = meio + 1, i;
-        int aux[] = new int[5];
-        while (iniciovetor1 <= meio && iniciovetor2 <= fim) {
-            if (x[iniciovetor1] <= x[iniciovetor2]) {
-                aux[poslivre] = x[iniciovetor1];
-                iniciovetor1++;
-            } else {
-                aux[poslivre] = x[iniciovetor2];
-                iniciovetor2++;
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.println(vetor[i]);
+        }
+
+        int imp = 1;
+
+        System.out.println(" ");
+        System.out.println("Palavras que iniciam com vogais: ");
+
+        for (int i = 0; i < vetor.length; i++) {
+            if (vetor[i].toUpperCase().charAt(0) == 'A' || vetor[i].toUpperCase().charAt(0) == 'E' || vetor[i].toUpperCase().charAt(0) == 'I' || vetor[i].toUpperCase().charAt(0) == 'O' || vetor[i].toUpperCase().charAt(0) == 'U') {
+                System.out.println(imp + "º palavra: " + vetor[i]);
+                imp++;
             }
-            poslivre++;
-        }
-        for (i = iniciovetor1; i <= meio; i++) {
-            aux[poslivre] = x[i];
-            poslivre++;
-        }
-        for (i = iniciovetor2; i <= fim; i++) {
-            aux[poslivre] = x[i];
-            poslivre++;
-        }
-        for (i = inicio; i <= fim; i++) {
-            x[i] = aux[i];
         }
     }
 
+    public static void combina(String vetor[], int inicio, int fim, int meio) {
+        int posLivre = inicio, vetor1 = inicio, vetor2 = meio + 1;
+        String aux[] = new String[20];
+        while (vetor1 <= meio && vetor2 <= fim) {
+            if (vetor[vetor1].compareTo(vetor[vetor2]) <= 0) {
+                aux[posLivre] = vetor[vetor1];
+                vetor1++;
+            } else {
+                aux[posLivre] = vetor[vetor2];
+                vetor2++;
+            }
+            posLivre++;
+        }
+
+        for (int i = vetor1; i <= meio; i++) {
+            aux[posLivre] = vetor[i];
+            posLivre++;
+        }
+
+        for (int i = vetor2; i <= fim; i++) {
+            aux[posLivre] = vetor[i];
+            posLivre++;
+        }
+
+        for (int i = inicio; i <= fim; i++) {
+            vetor[i] = aux[i];
+        }
+    }
 }

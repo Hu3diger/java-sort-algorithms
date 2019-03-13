@@ -19,7 +19,6 @@ The user can input ten numbers (Real numbers), and the output is the ordenated l
 
 ### :point_right: [Atividade 4](https://github.com/Hu3diger/ordenation-activities/blob/master/Atividade4/Atividade4.java) 
 
-> (NOT COMPLETE AND NOT WORK)
 
 This class use the MergeSort algorithm.
 
@@ -35,9 +34,7 @@ The code generate one thousand random numbers and show to the user, and the outp
 
 ---
 
-### :point_right: Atividade 6
-
-> (IN PROGRESS OF DEVELOP)
+### :point_right: [Atividade 6](https://github.com/Hu3diger/ordenation-activities/blob/master/Atividade6/Atividade6.java)
 
 This class uses the Quicksort algorithm.
 
